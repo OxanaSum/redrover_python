@@ -12,7 +12,7 @@ def get_case(id_):
     return requests.get(f"{BASE_URL}/testcases/{id_}")
 
 def put_case(new_data, id_):
-    return requests.put(f"{BASE_URL}/{id_}", json=new_data)
+    return requests.put(f"{BASE_URL}/testcases/{id_}", json=new_data)
 
-def get_case_by_id(id_):
-    return requests.get(f"{BASE_URL}/{id_}")
+def delete_case(id_):
+    return requests.delete(f"{BASE_URL}/testcases/{id_}")

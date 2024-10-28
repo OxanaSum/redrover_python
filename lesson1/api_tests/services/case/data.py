@@ -1,5 +1,5 @@
 create_case_dict = {
-    "id": 0,
+    "id": 3,
     "name": "Тестовое задание",
     "description": "Тестовое задание",
     "priority": "высокий",
