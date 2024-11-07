@@ -4,7 +4,6 @@ from selenium.common.exceptions import NoSuchElementException
 
 driver = webdriver.Chrome()
 
-
 class WebElementWrapper:
     def __init__(self, element):
         self.element = element
@@ -13,7 +12,6 @@ class WebElementWrapper:
         """Проверяет, виден ли элемент на странице."""
         if not self.element.is_displayed():
             raise AssertionError("Элемент не виден")
-
 
 class Browser:
     def __init__(self, browser):
@@ -29,8 +27,7 @@ class Browser:
             return WebElementWrapper(element)
         except NoSuchElementException:
             raise AssertionError(f"Элемент с XPATH '{xpath}' не найден")
-
-
+в
 browser = Browser(driver)
 
 browser.open("http://195.133.27.184/")
