@@ -27,7 +27,7 @@ class Browser:
             return WebElementWrapper(element)
         except NoSuchElementException:
             raise AssertionError(f"Элемент с XPATH '{xpath}' не найден")
-в
+
 browser = Browser(driver)
 
 browser.open("http://195.133.27.184/")

@@ -126,4 +126,4 @@ def test_list_of_users():
     )
 
     should_be_equal(response.status_code, HTTPStatus.OK)
-    should_be_equal(response.json(), list_of_users_response
+    should_be_equal(response.json(), list_of_users_response)
